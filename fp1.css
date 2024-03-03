@@ -270,7 +270,91 @@ header
     height: 1100px;
     backdrop-filter: invert(1);
 }
-.cards1
-{
-    position: relative;
+
+
+
+
+
+
+
+/* cards */
+.cards-container{
+    position: absolute;
+    top: 300px;
+    right: 80px;
+    display: flexbox;
+    width: fit-content;
+}
+.card{
+    scale: calc(225/250);
+    background-color: rgba(0, 0, 0, 0.329);
+    height: 250px;
+    width: 430px;
+    padding: 15px;
+    border-radius: 30px;
+    backdrop-filter: blur(2px);
+    transition:linear 0.15s;
+}
+.card:hover{
+    transition:linear 0.15s;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.329);
+}
+.card-content{
+    display: flex;
+    align-content: center;
+}
+.card-title{
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    height: 50px;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.cardtitletext{
+    margin-top: 15px;
+    transition:ease-in-out 0.4s;
+    padding: 2px;
+    padding-bottom: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration-color: rgba(0, 0, 0, 0.114);
+    border-radius: 8px;
+}
+.cardtext{
+    color: azure;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    width: 250px;
+    text-align: justify;
+    margin: 10px;
+    transition:linear 0.1s;
+}
+.cardtext:hover{
+    text-shadow: 0 0 3px rgb(254, 214, 139);
+    transition:linear 0.1s;
+}
+.cardimage{
+    background-color: black;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 148.8px;
+    transition:linear 0.1s;
+    border-radius: 7px;
+}
+.cardimage:hover{
+    scale: 1.15;
+    transition:linear 0.1s;
+    box-shadow: 0 0 10px 1px black;
+}
+.cardtextauthor{
+    width: 250px;
+    margin-top: 15px;
+    text-align: right;
+    font-style: italic;
 }
