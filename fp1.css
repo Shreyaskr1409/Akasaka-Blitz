@@ -279,8 +279,9 @@ header
 
 /* cards */
 .cards-container{
+    z-index: 3;
     position: absolute;
-    top: 300px;
+    top: 700px;
     right: 80px;
     display: flexbox;
     width: fit-content;
@@ -297,12 +298,13 @@ header
 }
 .card:hover{
     transition:linear 0.15s;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.329);
 }
 .card-content{
     display: flex;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 .card-title{
     font-size: 45px;
@@ -338,14 +340,19 @@ header
     transition:linear 0.1s;
 }
 .cardimage{
-    background-color: black;
     flex: 1;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
     height: 148.8px;
+    width: 120px;
     transition:linear 0.1s;
     border-radius: 7px;
+
+
+
+    filter: contrast(0.8);
+    object-fit: cover;
 }
 .cardimage:hover{
     scale: 1.15;
