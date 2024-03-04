@@ -278,13 +278,24 @@ header
 
 
 /* cards */
+#heading1{
+    left: 10%;
+    position: absolute;
+    font-size: 80px;
+    top: 850px;
+    color: #b9b9b9;
+    text-decoration:underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #b58d59;
+}
 .cards-container{
     z-index: 3;
     position: absolute;
-    top: 700px;
-    right: 80px;
-    display: flexbox;
-    width: fit-content;
+    top: 990px;
+    left: 30%;
+    display: inline-flex;
+    width: 70%;
+    overflow-x: scroll;
 }
 .card{
     scale: calc(225/250);
@@ -295,11 +306,14 @@ header
     border-radius: 30px;
     backdrop-filter: blur(2px);
     transition:linear 0.15s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.432);
 }
 .card:hover{
     transition:linear 0.15s;
     backdrop-filter: blur(8px);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.329);
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.485);
+    text-decoration: underline;
+    text-decoration-color: #4C243B;
 }
 .card-content{
     display: flex;
@@ -317,6 +331,8 @@ header
     align-items: center;
 }
 .cardtitletext{
+    color: #b58d59;
+    text-shadow: 0 0 8px black;
     margin-top: 15px;
     transition:ease-in-out 0.4s;
     padding: 2px;
@@ -327,7 +343,7 @@ header
 }
 .cardtext{
     color: azure;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 15px;
     padding-top: 20px;
     width: 250px;
